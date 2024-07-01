@@ -5,7 +5,8 @@ const portfolioURL = 'https://keirakistensamy.github.io/vueTask/data/'
 
 export default createStore({
 state: {
-    jobTitle: null
+    jobTitle: null,
+    about: null,
 
   },
 
@@ -19,7 +20,12 @@ mutations: {
   setJobTitle(state, value) {
     state.jobTitle = value
   },
+  setAbout(state, value) {
+    state.about = value
   },
+
+
+},
 
 actions: {
   async fetchJobtitle(context) {
@@ -35,6 +41,22 @@ actions: {
       })
     }
   },
+  async fetchAbout(context) {
+    try {
+      let {
+        about
+      } = await (await axios.get(portfolioURL)).data
+      context.commit("setAbout", about)
+    } catch (e) {
+      Swal.fire({
+        title: "Error",
+        text: "Unable  to fetch about",
+        icon: "error",
+        timer: 2000,
+      })
+    }
+  },
+
   },
 
 modules: {
