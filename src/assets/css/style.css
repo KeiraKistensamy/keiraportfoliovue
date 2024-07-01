@@ -31,3 +31,11 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
+/* Footer */
+
+.footer{
+  padding-top: 20px;
+  
+}
