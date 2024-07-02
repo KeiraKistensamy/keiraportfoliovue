@@ -28,51 +28,7 @@
   export default {
     components: {   
         Spinner
-    },
-    data() {
-      return {
-        timelineItems: [
-          {
-            title: "Life Choices Coding Academy",
-            duration: "Apr 2024 - Current",
-            qualification: "Software and Web Development Course"
-          },
-          {
-            title: "FuturEd",
-            duration: "3 January 2024 - 6 January 2024",
-            duties: "I attended a 3 day workshop where I was trained to work in a call centre."
-          },
-          {
-            title: "Volunteered at a primary school",
-            duration: "February 2024 - April 2024",
-            duty: "I handled planning, finance, registers etc."
-          },
-          {
-            title: "Personal Sweets business",
-            duration: "December 2023 - current"
-          },
-          {
-            title: "Pedal Power Association(PPA)",
-            duration: "Part-time during 2023",
-            duty: "I made sure that all cyclists were registered to cycle and after they finished the race, I handed out a medal to each participant."
-          },
-          {
-            title: "School of Fashion",
-            duration: "2023"
-          },
-          {
-            title: "Own party decoration business",
-            duration: "2019 - 2022",
-            duty: "I planned and decorated birthday parties. I was able to turn an inspiration idea into reality."
-          },
-          {
-            title: "Spine Road High School",
-            duration: "2018 - 2022"
-          }
-        ]
-      };
-    }
-    
+    }  
   };
   </script>
   
