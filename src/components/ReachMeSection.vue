@@ -23,6 +23,7 @@
         </form>
       </div>
 
+      <div class="icons col-md-6">
       <div class="icons col-md m-5 d-flex justify-content-center">
           <a href="https://github.com/KeiraKistensamy" target="_blank"><img src="https://keirakistensamy.github.io/allimages/github icon.png" alt="GitHub" class="project-imgs img-fluid m-auto" width="40px" height="40px" loading="lazy"/></a>
           <a href="https://www.linkedin.com/in/keira-kistensamy-4722732a8/" target="_blank"><img src="https://keirakistensamy.github.io/images/images/linkedIn.png" alt="LinkedIn" class="project-imgs img-fluid m-auto" width="40px" height="40px" loading="lazy"/></a>
