@@ -1,5 +1,6 @@
 <template>
     <section class="container skills-container" id="skills">
+
         <div class="row d-grid">
             <h1 class="skills">Skills</h1>
             <div class="row g-3" v-if="skills?.length">
@@ -16,6 +17,31 @@
     </section>
 </template>
 
+      <div class="row">
+        <h1 class="skills">Skills</h1>
+    <div class="container skills-container">
+      <h1 class="skills">Skills</h1>
+      <div class="row d-grid col-md-6 justify-content-center" v-if="skills?.length" something>
+<Card v-for="(skill, i) in skills" :key="i">
+    <template #header>
+        <h2 class="card-title">{{ skill.Title }}</h2>
+    </template>
+    <template #body>
+
+    </template>
+      <img :src="skill.hosted" alt="skill image" loading="lazy" class="img-fluid"/>
+    <div class="card-body">
+      
+      <p class="mt-3">Level: {{ skill.proficiency }}</p>
+    </div>
+</Card>
+</div>
+<Spinner v-else />
+</div>
+</div>
+    </section>
+  </template>
+  
 
 <script setup>
 

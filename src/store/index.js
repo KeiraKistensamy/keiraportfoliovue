@@ -98,5 +98,6 @@ actions: {
 
 
 modules: {
-  }
+
+},
 })
