@@ -9,7 +9,6 @@ state: {
     about: null,
     skills: [],
 
-
   },
 
 
@@ -75,6 +74,7 @@ actions: {
         timer: 2000,
       })
     }
+  },
   },
 },
 

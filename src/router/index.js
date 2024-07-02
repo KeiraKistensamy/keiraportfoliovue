@@ -16,7 +16,7 @@ const routes = [
     name: 'skills',
     component: () => import('@/components/SkillsSection.vue')
   },
-]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
