@@ -18,6 +18,8 @@
     <!-- ResumeSection -->
     <section class="row" id="resume">
 
+      <ResumeSection/>
+
     </section>
 
     <!-- SkillsSection -->
@@ -50,7 +52,9 @@
 
 import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
+import ResumeSection from '@/components/ResumeSection.vue';
 import SkillsSection from '@/components/SkillsSection.vue'
+import ReachMeSection from '@/components/ReachMeSection.vue';
 
 import ReachMeSection from '@/components/ReachMeSection.vue';
 
@@ -60,6 +64,7 @@ export default {
   components: {
     LandingSection,
     AboutSection,
+    ResumeSection,
     SkillsSection,
     ReachMeSection
 
