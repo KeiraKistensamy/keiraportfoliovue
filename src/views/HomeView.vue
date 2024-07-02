@@ -56,8 +56,6 @@ import ResumeSection from '@/components/ResumeSection.vue';
 import SkillsSection from '@/components/SkillsSection.vue'
 import ReachMeSection from '@/components/ReachMeSection.vue';
 
-import ReachMeSection from '@/components/ReachMeSection.vue';
-
 
 export default {
   name: 'HomeView',
