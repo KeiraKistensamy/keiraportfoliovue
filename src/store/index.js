@@ -10,7 +10,6 @@ state: {
     resume: null,
     skills: [],
 
-
   },
 
 
@@ -94,6 +93,7 @@ actions: {
         timer: 2000,
       })
     }
+  },
   },
 },
 

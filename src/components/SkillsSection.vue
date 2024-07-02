@@ -2,6 +2,25 @@
     <section class="container skills-container" id="skills">
       <div class="row">
         <h1 class="skills">Skills</h1>
+    <div class="container skills-container">
+      <h1 class="skills">Skills</h1>
+      <div class="row" v-if="Skills.length">
+        <div class="skillCard" v-for="(skill, i) in Skills" :key="i">
+            <h4 class="display-4">{{ skill.Title }}</h4>
+
+            <p class="lead">{{skill.proficiency  }}</p>
+            
+        </div>
+        
+        <!-- <div class="col-md-3" v-for="(skill, index) in Skills" :key="index">
+          <p>
+            <span>{{ skill.Title }}</span>
+          </p>
+          <p>
+              {{skill.proficiency}}
+          </p>
+        </div> -->
+
       </div>
       <div class="row d-grid col-md-6 justify-content-center" v-if="skills?.length" something>
 <Card v-for="(skill, i) in skills" :key="i">
