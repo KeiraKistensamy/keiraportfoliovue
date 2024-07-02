@@ -10,7 +10,13 @@ const routes = [
     path: '/about',
     name: 'about',
     component: () => import('@/components/AboutSection.vue')
-  }
+  },
+  {
+    path: '/skills',
+    name: 'skills',
+    component: () => import('@/components/SkillsSection.vue')
+  },
+
 ]
 
 const router = createRouter({
