@@ -7,6 +7,7 @@ export default createStore({
 state: {
     jobTitle: null,
     about: null,
+    resume: null,
     skills: [],
 
 
@@ -24,6 +25,9 @@ mutations: {
   },
   setAbout(state, value) {
     state.about = value
+  },
+  setResume(state, value) {
+    state.education = value
   },
   setSkills(state, value) {
     state.skills = value
@@ -56,6 +60,21 @@ actions: {
       Swal.fire({
         title: "Error",
         text: "Unable  to fetch about",
+        icon: "error",
+        timer: 2000,
+      })
+    }
+  },
+  async fetchResume(context) {
+    try {
+      let {
+        resume
+      } = await (await axios.get(portfolioURL)).data
+      context.commit("setResume", resume)
+    } catch (e) {
+      Swal.fire({
+        title: "Error",
+        text: "Unable  to fetch resume",
         icon: "error",
         timer: 2000,
       })
