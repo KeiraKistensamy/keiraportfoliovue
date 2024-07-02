@@ -51,7 +51,9 @@
 import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
+
 import ReachMeSection from '@/components/ReachMeSection.vue';
+
 
 export default {
   name: 'HomeView',
@@ -60,6 +62,7 @@ export default {
     AboutSection,
     SkillsSection,
     ReachMeSection
+
   }
 }
 </script>

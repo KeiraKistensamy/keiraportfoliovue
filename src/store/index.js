@@ -8,6 +8,7 @@ state: {
     jobTitle: null,
     about: null,
     skills: [],
+
   },
 
 
@@ -74,8 +75,8 @@ actions: {
       })
     }
   },
-
   },
+},
 
 modules: {
   }

@@ -8,6 +8,15 @@
             <p class="lead">{{skill.proficiency  }}</p>
             
         </div>
+        
+        <!-- <div class="col-md-3" v-for="(skill, index) in Skills" :key="index">
+          <p>
+            <span>{{ skill.Title }}</span>
+          </p>
+          <p>
+              {{skill.proficiency}}
+          </p>
+        </div> -->
 
       </div>
       <Spinner v-else />
