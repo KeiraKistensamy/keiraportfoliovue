@@ -7,8 +7,8 @@ export default createStore({
 state: {
     jobTitle: null,
     about: null,
+    resume: null,
     skills: [],
-
 
   },
 
@@ -24,6 +24,9 @@ mutations: {
   },
   setAbout(state, value) {
     state.about = value
+  },
+  setResume(state, value) {
+    state.education = value
   },
   setSkills(state, value) {
     state.skills = value
@@ -91,8 +94,10 @@ actions: {
       })
     }
   },
-},
+  },
+
 
 modules: {
-  }
+
+},
 })

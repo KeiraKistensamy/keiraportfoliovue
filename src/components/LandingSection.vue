@@ -1,6 +1,6 @@
 <template>
     <div class="container landing-container">
-      <div class="row vh-100 d-block d-md-flex align-items-center">
+      <div class="row  d-block d-md-flex align-items-center">
           <div class="col">
                   <img src="https://keirakistensamy.github.io/allimages/images/KeiraLogo.jpg" alt="keira" class="img-fluid w-75 mb-5" loading="lazy">
           </div>

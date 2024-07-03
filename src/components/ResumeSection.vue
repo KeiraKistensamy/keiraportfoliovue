@@ -23,6 +23,7 @@
     </section>
   </template>
   
+
   <script setup>
 import Spinner from './Spinner.vue'
 import { computed, onMounted } from 'vue'
@@ -34,6 +35,15 @@ const resume = computed(() => store.state.resume)
 onMounted(() => {
   store.dispatch('fetchResume')
 })
+
+  <script>
+  import Spinner from './Spinner.vue';
+  export default {
+    components: {   
+        Spinner
+    }  
+  };
+
   </script>
   
   <style scoped>
@@ -50,6 +60,7 @@ onMounted(() => {
       font-size: 48px;
       text-shadow: 2px 2px 5px #0f2e7e;
   }
+
 
   .timeline {
   list-style: none;
@@ -191,6 +202,7 @@ onMounted(() => {
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
 
   
   </style>

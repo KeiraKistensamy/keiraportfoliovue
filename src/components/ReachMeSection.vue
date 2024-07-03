@@ -28,10 +28,14 @@
     <div id="details" class="text-center w-100">
         <div class="icons col-md-6 mx-auto">
             <div class="icons col-md mb-5">
+
+                <p>You're welcome to visit my social media profiles to stay connected and see what I'm up to.</p>
+
                 <a href="https://github.com/KeiraKistensamy" target="_blank"><img src="https://keirakistensamy.github.io/allimages/github icon.png" alt="GitHub" class="project-imgs img-fluid m-auto" width="40px" height="40px" loading="lazy"/></a>
                 <a href="https://www.linkedin.com/in/keira-kistensamy-4722732a8/" target="_blank"><img src="https://keirakistensamy.github.io/images/images/linkedIn.png" alt="LinkedIn" class="project-imgs img-fluid m-auto" width="40px" height="40px" loading="lazy"/></a>
             </div>
             <div>
+
                 <div class="d-flex justify-content-between">
                     <img src="https://keirakistensamy.github.io/images/images/phone_icon.png" alt=" " width="40px" height="40px"><span>063 941 4716</span>
 
@@ -44,6 +48,13 @@
                     <img src="https://keirakistensamy.github.io/images/images/location icon.png" alt="" width="40px" height="40px"><p>Mitchell's Plain, Cape Town</p>
 
                 </div>
+
+
+                <img src="https://keirakistensamy.github.io/images/images/phone_icon.png" alt=" " width="40px" height="40px"><p>063 941 4716</p>
+                <img src="https://keirakistensamy.github.io/images/images/email_icon.png" alt=" " width="40px" height="40px"><p>Keirakist0987@gmail.com</p>
+                <img src="https://keirakistensamy.github.io/images/images/location icon.png" alt="" width="40px" height="40px"><p>Mitchell's Plain, Cape Town</p>
+
+
             </div>
         </div>
     </div>
@@ -90,6 +101,7 @@
     color: black;
     /* margin-bottom: 20px; */
     font-size: 20px;
+
 }
 
 .formal {
@@ -102,6 +114,21 @@
 .formal .form-group {
     margin-bottom: 20px;
 }
+
+
+
+.formal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.formal .form-group {
+    margin-bottom: 20px;
+}
+
+
 
 .formal .form-group input,
 .formal .form-group textarea {
