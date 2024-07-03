@@ -114,8 +114,6 @@
 }
 
 
-}
-
 .formal {
     background-color: #fff;
     padding: 30px;
