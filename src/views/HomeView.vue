@@ -37,6 +37,8 @@
     <!-- ProjectsSection -->
     <section class="row" id="projects">
 
+      <ProjectsSection/>
+
     </section>
 
     <!-- ReachMeSection -->
@@ -52,9 +54,10 @@
 
 import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
-import ResumeSection from '@/components/ResumeSection.vue';
+import ResumeSection from '@/components/ResumeSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
-import ReachMeSection from '@/components/ReachMeSection.vue';
+import ProjectsSection from '@/components/ProjectsSection.vue'
+import ReachMeSection from '@/components/ReachMeSection.vue'
 
 export default {
   name: 'HomeView',
@@ -63,6 +66,7 @@ export default {
     AboutSection,
     ResumeSection,
     SkillsSection,
+    ProjectsSection,
     ReachMeSection
   }
 }
