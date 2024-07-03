@@ -8,7 +8,7 @@
             <div class="card-body">
               <h5 class="card-title">{{ project.title }}</h5>
               <p class="card-text">{{ project.description }}</p>
-              <p class="card-text">{{ project.technologies }}</p>
+              <p class="card-text">{{ project.technologies.toString() }}</p>
               <div class="buttons d-flex justify-content-center">
                 <a class="m-2" :href="project.hosted" target="_blank">
                   <button class="pro-link">Hosted</button>

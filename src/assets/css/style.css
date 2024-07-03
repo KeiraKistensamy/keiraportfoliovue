@@ -32,10 +32,21 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
 
 /* Footer */
 
 .footer{
   padding-top: 20px;
   
+}
+
+section {
+  scroll-margin-block: 4rem;
+}
+
+.landing-container :is(.row:first-child){
+  height: 100dvh;
 }

@@ -29,6 +29,9 @@ export default createStore({
     setSkills(state, value) {
       state.skills = value
     },
+    setTestimonials(state, value) {
+      state.testimonials = value
+    },
     setProjects(state, value) {
       state.projects = value
     },
@@ -92,6 +95,21 @@ export default createStore({
         Swal.fire({
           title: "Error",
           text: "Unable  to fetch skills",
+          icon: "error",
+          timer: 2000,
+        })
+      }
+    },
+    async fetchTestimonials(context) {
+      try {
+        let {
+          testimonials
+        } = await (await axios.get(portfolioURL)).data
+        context.commit("setTestimonials", testimonials)
+      } catch (e) {
+        Swal.fire({
+          title: "Error",
+          text: "Unable  to fetch testimonials",
           icon: "error",
           timer: 2000,
         })
