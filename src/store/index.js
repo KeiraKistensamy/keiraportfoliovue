@@ -11,6 +11,7 @@ export default createStore({
     about: null,
     resume: null,
     skills: null,
+    projects: null
 
   },
   getters: {
@@ -27,6 +28,9 @@ export default createStore({
     },
     setSkills(state, value) {
       state.skills = value
+    },
+    setProjects(state, value) {
+      state.projects = value
     },
 
 
@@ -88,6 +92,21 @@ export default createStore({
         Swal.fire({
           title: "Error",
           text: "Unable  to fetch skills",
+          icon: "error",
+          timer: 2000,
+        })
+      }
+    },
+    async fetchProjects(context) {
+      try {
+        let {
+          projects
+        } = await (await axios.get(portfolioURL)).data
+        context.commit("setProjects", projects)
+      } catch (e) {
+        Swal.fire({
+          title: "Error",
+          text: "Unable  to fetch projects",
           icon: "error",
           timer: 2000,
         })
