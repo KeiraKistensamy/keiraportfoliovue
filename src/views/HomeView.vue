@@ -56,7 +56,7 @@ import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import ResumeSection from '@/components/ResumeSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
-import ProjectsSection from '@/components/ProjectsSection.vue'
+import ProjectsSection from '@/components/ProjectsSection'
 import ReachMeSection from '@/components/ReachMeSection.vue'
 
 export default {
