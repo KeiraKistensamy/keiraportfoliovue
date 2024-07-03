@@ -24,7 +24,7 @@
   </template>
   
 
-  <script setup>
+<script setup>
 import Spinner from './Spinner.vue'
 import { computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
@@ -36,15 +36,7 @@ onMounted(() => {
   store.dispatch('fetchResume')
 })
 
-  <script>
-  import Spinner from './Spinner.vue';
-  export default {
-    components: {   
-        Spinner
-    }  
-  };
-
-  </script>
+</script>
   
   <style scoped>
   
