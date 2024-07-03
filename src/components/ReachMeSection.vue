@@ -13,7 +13,7 @@
                 <input type="text" name="lastname" placeholder="Enter your last name" autocomplete="off" required/>
               </div>
               <div class="form-group">
-                <input type="text" name="Email" placeholder="Enter your Email Address" autocomplete="off" required/>
+                <input type="email" name="Email" placeholder="Enter your Email Address" autocomplete="off" required/>
               </div>
               <div class="input form-group">
                 <textarea rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
