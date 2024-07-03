@@ -61,6 +61,21 @@ actions: {
       })
     }
   },
+  async fetchResume(context) {
+    try {
+      let {
+        resume
+      } = await (await axios.get(portfolioURL)).data
+      context.commit("setResume", resume)
+    } catch (e) {
+      Swal.fire({
+        title: "Error",
+        text: "Unable  to fetch resume",
+        icon: "error",
+        timer: 2000,
+      })
+    }
+  },
   async fetchSkills(context) {
     try {
       let {
