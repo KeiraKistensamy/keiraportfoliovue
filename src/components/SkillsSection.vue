@@ -18,7 +18,6 @@
 
 
 <script setup>
-
 import Spinner from './Spinner.vue'
 import { computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
