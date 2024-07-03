@@ -49,9 +49,11 @@
 
                 </div>
 
+
                 <img src="https://keirakistensamy.github.io/images/images/phone_icon.png" alt=" " width="40px" height="40px"><p>063 941 4716</p>
                 <img src="https://keirakistensamy.github.io/images/images/email_icon.png" alt=" " width="40px" height="40px"><p>Keirakist0987@gmail.com</p>
                 <img src="https://keirakistensamy.github.io/images/images/location icon.png" alt="" width="40px" height="40px"><p>Mitchell's Plain, Cape Town</p>
+
 
             </div>
         </div>
@@ -114,6 +116,7 @@
 }
 
 
+
 .formal {
     background-color: #fff;
     padding: 30px;
@@ -124,6 +127,7 @@
 .formal .form-group {
     margin-bottom: 20px;
 }
+
 
 
 .formal .form-group input,

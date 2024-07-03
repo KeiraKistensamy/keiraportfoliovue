@@ -64,7 +64,6 @@ export default {
     ResumeSection,
     SkillsSection,
     ReachMeSection
-
   }
 }
 </script>
