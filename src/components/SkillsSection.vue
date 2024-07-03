@@ -1,15 +1,15 @@
 <template>
     <section class="container skills-container" id="skills">
-        <div class="row d-grid">
+        <div class="row">
             <h1 class="skills">Skills</h1>
             <div class="row g-3" v-if="skills?.length">
-                <Card class="col-md-4 mb-4" v-for="(skill, i) in skills" :key="i">
+                <div class="col-md-4 mb-4" v-for="(skill, i) in skills" :key="i">
                     <h2 class="card-title">{{ skill.Title }}</h2>
                     <div class="card-body">
                         <img :src="skill.hosted" alt="skill image" loading="lazy" class="img-fluid"/>
                         <p class="mt-3">Proficiency: {{ skill.proficiency }}</p>
                     </div>
-                </Card>
+                </div>
             </div>
             <Spinner v-else />
         </div>
@@ -19,6 +19,7 @@
 
 <script setup>
 import Spinner from './Spinner.vue'
+
 import { computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
 
