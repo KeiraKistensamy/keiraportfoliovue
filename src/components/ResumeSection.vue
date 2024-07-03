@@ -1,60 +1,61 @@
 <template>
-    <section class="container resume-container" id="resume">
-      <div class="box">
-        <h1 class="resume">Resume</h1>
-        <ul class="timeline" id="nav4">
-          <li class="timeline-inverted" v-for="(item, index) in timelineItems" :key="index">
-            <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">{{ item.title }}</h4>
-              </div>
-              <div class="timeline-body">
-                <p>Duration: {{ item.duration }}</p>
-                <p v-if="item.qualification">Qualification: {{ item.qualification }}</p>
-                <p v-if="item.duties">Duties: {{ item.duties }}</p>
-                <p v-if="item.duty">Duty: {{ item.duty }}</p>
-                <Spinnner v-else/>
-              </div>
+  <section class="container resume-container" id="resume">
+    <div class="box">
+      <h1 class="resume">Resume</h1>
+      <ul class="timeline" v-if="timelineItems?.length" id="nav4">
+        <li
+          :class="{'timeline-inverted': index % 2 !== 0}"
+          v-for="(item, index) in timelineItems"
+          :key="index"
+        >
+          <div class="timeline-badge warning">
+            <i class="glyphicon glyphicon-credit-card"></i>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">{{ item.company }}</h4>
             </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </template>
-  
+            <div class="timeline-body">
+              <p>Duration: {{ item.duration }}</p>
+              <p v-if="item.responsibilities">Responsibilities: {{ item.responsibilities }}</p>
+              <SpinnerComp v-else />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <SpinnerComp v-else />
+    </div>
+  </section>
+</template>
 
 <script setup>
-import Spinner from './Spinner.vue'
-import { computed, onMounted } from 'vue'
-import { useStore } from 'vuex'
+import SpinnerComp from "./Spinner.vue";
+import { computed, onMounted } from "vue";
+import { useStore } from "vuex";
 
-const store = useStore()
-const resume = computed(() => store.state.resume)
+const store = useStore();
+const timelineItems = computed(() => store.state.resume);
 
 onMounted(() => {
-  store.dispatch('fetchResume')
-})
-
+  store.dispatch("fetchResume");
+});
 </script>
-  
-  <style scoped>
-  
-  .resume-container{
-      margin-top: 40px;
-      border: 4px solid #0f2e7e;
-      border-radius: 2rem;
-      background-color: #8b8fde;
-  }
-  
-  .resume{
-      font-family: "Playfair Display", italic;
-      font-size: 48px;
-      text-shadow: 2px 2px 5px #0f2e7e;
-  }
 
+<style scoped>
+.resume-container {
+  margin-top: 40px;
+  border: 4px solid #0f2e7e;
+  border-radius: 2rem;
+  background-color: #8b8fde;
+}
 
-  .timeline {
+.resume {
+  font-family: "Playfair Display", italic;
+  font-size: 48px;
+  text-shadow: 2px 2px 5px #0f2e7e;
+}
+
+.timeline {
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
@@ -194,8 +195,4 @@ onMounted(() => {
 .timeline-body > p + p {
   margin-top: 5px;
 }
-
-
-  
-  </style>
-  
+</style>
