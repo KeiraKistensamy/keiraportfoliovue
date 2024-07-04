@@ -56,7 +56,7 @@
   .project-imgs { 
     max-width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 2rem;
   }
   
   .card {
@@ -88,7 +88,7 @@
   }
   
   .pro-link:hover {
-    background-color: rgb(5, 68, 5);
+    background-color: #8b8fde;
   }
   </style>
   
