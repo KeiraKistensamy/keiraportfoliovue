@@ -50,3 +50,17 @@ section {
 .landing-container :is(.row:first-child){
   height: 100dvh;
 }
+
+/* Animation */
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__jackInTheBox {
+  --animate-duration: 5s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 2000ms;
+  --animate-delay: 0.5s;
+}
+
