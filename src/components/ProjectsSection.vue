@@ -53,7 +53,7 @@
     margin-bottom: 40px;
   }
   
-  .project-imgs {
+  .project-imgs { 
     max-width: 100%;
     height: auto;
     border-radius: 1rem;
