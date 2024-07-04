@@ -58,16 +58,16 @@ const store = useStore()
 }
 
 p {
-        font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
     typing 4.5s steps(40, end),
     blink-caret .75s step-end infinite;
-  font-size: 1.5rem; 
+    font-size: 1.5rem; 
 
 }
 
@@ -83,24 +83,24 @@ img[alt="keira"] {
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
-  border-right: .15em solid rgb(74, 49, 164);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
+    border-right: .15em solid rgb(74, 49, 164);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+    from { width: 0 }
+    to { width: 100% }
 }
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(116, 68, 211); }
+    from, to { border-color: transparent }
+    50% { border-color: rgb(116, 68, 211); }
 }
 
 
