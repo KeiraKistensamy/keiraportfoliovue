@@ -195,5 +195,4 @@ onMounted(() => {
 .timeline-body > p + p {
   margin-top: 5px;
 }
-
 </style>
