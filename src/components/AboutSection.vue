@@ -52,6 +52,8 @@ img[alt="keira"] {
     border-radius: 3rem;
     border: 2px solid black;
     margin: 40px;
+    object-fit: cover;
+
 }
 
 .text {

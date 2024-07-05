@@ -64,6 +64,7 @@ img[alt="keira"] {
     aspect-ratio: 1/1;
     border-radius: 3rem;
     border: 2px solid black;
+    object-fit: cover;
 }
 
 .header {
