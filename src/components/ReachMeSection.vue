@@ -5,7 +5,7 @@
         <div class="container landing-container">
           <div class="row p-5 d-block d-md-flex align-items-center">
               <div class="col">
-                <form action="https://formspree.io/f/mbjnblwp" method="POST" class="formal">
+                <form action="https://formspree.io/f/movaqpjb" method="POST" class="formal">
               <div class="form-group">
                 <input type="text" name="Firstname" placeholder="Enter your first name" autocomplete="off" required/>
               </div>
