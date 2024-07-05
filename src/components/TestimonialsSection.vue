@@ -157,5 +157,10 @@
 .owl-next:before {
   content: "\f105";
 }
+
+@media screen and (width < 700px) {
+    
+}
+
 </style>
   

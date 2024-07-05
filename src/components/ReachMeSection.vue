@@ -19,7 +19,7 @@
                 <textarea rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
               </div>
               <div class="form-group d-flex justify-content-around">
-                <button class="btn btn-success" type="submit">Send Message</button>
+                <button class="btn btn-success" type="submit">Submit</button>
                 <button class="btn btn-success" type="reset">Clear</button>
               </div>
             </form>
@@ -133,6 +133,7 @@
 
 .icons {
     margin-bottom: 20px;
+    size: 50px;
 }
 
 .icons p {
@@ -159,6 +160,27 @@
     align-items: center;
 }
 
+@media screen and (width < 767px) {
+    
+    .btn{
+        /* height: 2rem; */
+        width: 5rem;
+        font-size: 15px;
+        margin: 3px;
+   }
+   .icons {
+    size: 20px;
+}
+.icons p {
+    font-size: 10px;
+}
+}
 
+@media screen and (width < 992px) {
+    .container {
+        padding: 0;
+        min-height: 150dvh;
+    }
+}
 
 </style>

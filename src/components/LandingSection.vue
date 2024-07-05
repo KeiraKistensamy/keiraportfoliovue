@@ -7,10 +7,10 @@
           <div class="col">
               <div id="details">
                   <h2 class="header">Hi, I am</h2>
-                  <h1 class="display-1 animate__animated animate__jackInTheBox">Keira Kistensamy</h1>
+                  <h1 class="display-1">Keira Kistensamy</h1>
 
-                  <p v-if="title">
-                      and I am an
+                  <p class="title" v-if="title">
+                      and I am
                   <span>{{ title }}</span>
                   </p>
                   <Spinner v-else/> 
@@ -91,6 +91,11 @@ img[alt="keira"] {
     50% { border-color: rgb(116, 68, 211); }
 }
 
+@media screen and (width < 767px) {
+    .title {
+        font-size: 1rem;
+    }
+}
 
 
 </style> 

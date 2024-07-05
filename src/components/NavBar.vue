@@ -30,6 +30,10 @@
     
     <style scoped>
     
-    
-    
+    @media screen and (max-width: 767px) {
+        .navbar {
+            width: 100%;
+        }
+        
+    }
     </style>

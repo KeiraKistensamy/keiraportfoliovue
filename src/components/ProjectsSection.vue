@@ -1,22 +1,20 @@
 <template>
     <section class="container projects-container" id="projects">
       <h1 id="text">Projects</h1>
-      <div class="row">
-        <div v-for="(project, index) in projects" :key="index" class="col-md-3 mb-4">
-          <div class="card">
-            <img :src="project.imgUrl" :alt="project.title" class="card-img-top project-imgs" loading="lazy" />
-            <div class="card-body">
-              <h5 class="card-title">{{ project.title }}</h5>
-              <p class="card-text">{{ project.description }}</p>
-              <p class="card-text">{{ project.technologies.toString() }}</p>
-              <div class="buttons d-flex justify-content-center">
-                <a class="m-2" :href="project.hosted" target="_blank">
-                  <button class="pro-link">Hosted</button>
-                </a>
-                <a class="m-2" :href="project.link" target="_blank">
-                  <button class="pro-link">GitHub</button>
-                </a>
-              </div>
+      <div class="row justify-content-between gap-3 p-5">
+        <div class="card " v-for="(project, index) in projects" :key="index">
+          <img :src="project.imgUrl" :alt="project.title" class="card-img-top project-imgs" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <p class="card-text">{{ project.technologies.toString() }}</p>
+            <div class="buttons d-flex justify-content-center">
+              <a class="m-2" :href="project.hosted" target="_blank">
+                <button class="pro-link">Hosted</button>
+              </a>
+              <a class="m-2" :href="project.link" target="_blank">
+                <button class="pro-link">GitHub</button>
+              </a>
             </div>
           </div>
         </div>
@@ -50,7 +48,7 @@
     font-family: 'Playfair Display', italic;
     font-size: 48px;
     text-shadow: 2px 2px 5px #0f2e7e;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
   
   .project-imgs { 
@@ -65,6 +63,8 @@
     background-color: white;
     box-shadow: 0 3px 6px whitesmoke;
     transition: transform 0.6s, border-color 0.3s;
+    width: 18rem;
+  
   }
   
   .card:hover {
@@ -95,6 +95,12 @@
   
   .pro-link:hover {
     background-color: rgb(5, 68, 5);
+  }
+  @media screen and (width < 769px) {
+    .card {
+      margin-inline: auto;
+    }
+    
   }
   </style>
   
