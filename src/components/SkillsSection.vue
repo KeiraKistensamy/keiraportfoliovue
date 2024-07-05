@@ -1,12 +1,12 @@
 <template>
     <section class="container skills-container" id="skills">
         <div class="row">
-            <h1 class="skills">Skills</h1>
+            <h1 class="skill">Skills</h1>
             <div class="row g-3" v-if="skills?.length">
                 <div class="col-md-4 mb-4" v-for="(skill, i) in skills" :key="i">
                     <h2 class="card-title">{{ skill.Title }}</h2>
                     <div class="card-body">
-                        <img :src="skill.hosted" alt="skill image" loading="lazy" class="img-fluid"/>
+                        <img :src="skill.hosted" alt="skill image" loading="lazy" class="img-fluid skill-image"/>
                         <p class="mt-3">Proficiency: {{ skill.proficiency }}</p>
                     </div>
                 </div>
@@ -41,13 +41,15 @@ onMounted(() => {
   background-color: #8b8fde;
 }
 
-.skills {
+.skill {
   font-family: "Playfair Display", italic;
   font-size: 48px;
   text-shadow: 2px 2px 5px #0f2e7e;
 }
-[something] {
-    width: 18rem;
+
+.skills:hover {
+    transform: translateY(-10px);
+    border-color: #8b8fde;
 }
 
 .skills {
@@ -67,6 +69,7 @@ onMounted(() => {
 body {
     text-align: center;
 }
+
 .card-body {
     text-align: center;
     color: #000000;
@@ -77,12 +80,17 @@ body {
     gap: 1.5rem; /* Customize the gap between columns */
 }
 
-img[alt="skill image"] {
+.skill-image {
     width: 7rem;
     height: 7rem;
-    border: 3px solid green;
+    border: 4px solid green;
     border-radius: 5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-</style>
 
-  
+.skill-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+</style>

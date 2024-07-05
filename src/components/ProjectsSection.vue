@@ -38,7 +38,7 @@
   
   <style scoped>
   .projects-container {
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
     border: 4px solid #0f2e7e;
@@ -69,13 +69,19 @@
   
   .card:hover {
     transform: translateY(-10px);
-    border-color: rgb(5, 68, 5);
+    border-color: #8b8fde;
   }
   
   .card-title {
     font-size: 1.25rem;
     font-weight: bold;
   }
+
+.card-img-top {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+}
   
   .pro-link {
     margin: 10px;

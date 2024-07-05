@@ -22,6 +22,8 @@ export default {
 
 .card {
     width: 18rem;
+    margin: 1rem;
+    column-gap: 5rem;
 }
 
 </style>

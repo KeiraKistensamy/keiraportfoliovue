@@ -57,6 +57,9 @@ section {
 .animate__animated.animate__jackInTheBox {
   --animate-duration: 5s;
 }
+.animate__animated.animate__lightSpeedInRight {
+  --animate-duration: 2s;
+}
 
 /* This changes all the animations globally */
 :root {

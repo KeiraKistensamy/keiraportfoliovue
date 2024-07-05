@@ -13,8 +13,8 @@
                       and I am an
                   <span>{{ title }}</span>
                   </p>
-                  <Spinner v-else/>
-              </div>
+                  <Spinner v-else/> 
+                </div>
           </div>
       </div>
     </div>
@@ -29,22 +29,9 @@ const store = useStore()
     const jobTitle = 
     computed(() => store.state.jobTitle)
     const title = ref('an aspiring developer')
-    const cnt = ref(-1)
 
-    function repeat() {
-        try {
-            if (cnt.value == jobTitle.value?.length) cnt.value = 0;
-            title.value = 
-                jobTitle.value?.at(cnt.value)?.Title;
-                setTimeout(repeat, 2000)
-                cnt.value++
-        } catch (e) {
-            // 
-        }
-    }
     onMounted(() => {
         store.dispatch('fetchJobtitle')
-        repeat()
     })
 
 </script>

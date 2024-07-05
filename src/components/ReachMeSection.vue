@@ -24,7 +24,7 @@
               </div>
             </form>
         </div>
-<div class="col row p-5 d-flex align-items-center">
+<!-- <div class="col row p-5 d-flex align-items-center">
     <div id="details" class="text-center w-100">
         <div class="icons col-md-6 mx-auto">
             <div class="icons col-md mb-5">
@@ -49,7 +49,32 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<div class="col-3" id="contact-me">
+                <div class="hTCM">
+                  <div class="phone-number">
+                    <img :src="imgUrlPhoneNumber" alt=""/>
+                  </div>
+
+                  <div class="email">
+                    <img :src="imgUrlEmail" alt=""/>
+                  </div>
+
+                  <div class="location">
+                    <img :src="imgUrlLocation" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="contact-dets">
+                  <p>+27 81 314 0839</p>
+
+                  <p>candicekeet3@gmail.com</p>
+
+                  <p>Cape Town, South Africa</p>
+                </div>
+              </div> 
 
 </div>
 

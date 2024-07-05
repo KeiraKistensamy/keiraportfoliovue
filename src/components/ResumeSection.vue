@@ -11,7 +11,7 @@
           <div class="timeline-badge warning">
             <i class="glyphicon glyphicon-credit-card"></i>
           </div>
-          <div class="timeline-panel">
+          <div class="timeline-panel animate__animated animate__lightSpeedInRightg">
             <div class="timeline-heading">
               <h4 class="timeline-title">{{ item.company }}</h4>
             </div>
@@ -195,4 +195,5 @@ onMounted(() => {
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
 </style>

@@ -7,7 +7,7 @@
           <div class="testimonial-bg">
             <div id="testimonial-slider" class="owl-carousel">
               <div class="testimonial" v-for="testimonial in testimonials" :key="testimonial.name">
-                <div class="pic" data-aos="flip-left" data-aos-duration="1000">
+                <div class="pic">
                   <img :src="testimonial.profile" alt="" loading="lazy" />
                 </div>
                 <h3 class="title">{{ testimonial.name }}</h3>
