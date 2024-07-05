@@ -7,7 +7,7 @@
           <div class="testimonial-bg">
             <div id="testimonial-slider" class="owl-carousel">
               <div class="testimonial" v-for="testimonial in testimonials" :key="testimonial.name">
-                <div class="pic">
+                <div class="pic" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                   <img :src="testimonial.profile" alt="" loading="lazy" />
                 </div>
                 <h3 class="title">{{ testimonial.name }}</h3>
@@ -124,7 +124,7 @@
 #testimonial-slider .testimonial .post {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  color: #848484;
+  color: #605f5f;
 }
 
 .owl-theme .owl-controls {
@@ -138,7 +138,7 @@
   width: 50px;
   height: 50px;
   line-height: 50px;
-  background: #34363b;
+  background: #212123;
   opacity: 1;
   padding: 0;
   display: inline-block;
