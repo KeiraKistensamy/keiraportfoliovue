@@ -24,57 +24,33 @@
               </div>
             </form>
         </div>
-<!-- <div class="col row p-5 d-flex align-items-center">
+<div class="col row p-5 d-flex align-items-center">
     <div id="details" class="text-center w-100">
         <div class="icons col-md-6 mx-auto">
-            <div class="icons col-md mb-5">
-                <a href="https://github.com/KeiraKistensamy" target="_blank"><img src="https://keirakistensamy.github.io/allimages/github icon.png" alt="GitHub" class="project-imgs img-fluid m-auto" width="40px" height="40px" loading="lazy"/></a>
-                <a href="https://www.linkedin.com/in/keira-kistensamy-4722732a8/" target="_blank"><img src="https://keirakistensamy.github.io/images/images/linkedIn.png" alt="LinkedIn" class="project-imgs img-fluid m-auto" width="40px" height="40px" loading="lazy"/></a>
-            </div>
-            <div>
-
-                <div class="d-flex justify-content-between">
-                    <img src="https://keirakistensamy.github.io/images/images/phone_icon.png" alt=" " width="30px" height="30px"><span>063 941 4716</span>
+            <div >
+                
+                <div class="d-flex justify-content-start gap-5">
+                    <img src="https://keirakistensamy.github.io/images/images/phone_icon.png" alt=" " width="30px" height="30px"><p>063 941 4716</p>
 
                 </div>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between gap-5">
                     <img src="https://keirakistensamy.github.io/images/images/email_icon.png" alt=" " width="30px" height="30px"><p>Keirakist0987@gmail.com</p>
 
                 </div>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between gap-4">
                     <img src="https://keirakistensamy.github.io/images/images/location icon.png" alt="" width="30px" height="30px"><p>Mitchell's Plain, Cape Town</p>
 
                 </div>
 
             </div>
+            <div class="icons col-md mb-5 p-5 gap-5 d-flex ">
+                <a href="https://github.com/KeiraKistensamy" target="_blank"><img src="https://keirakistensamy.github.io/allimages/github icon.png" alt="GitHub" class="project-imgs img-fluid m-auto" width="40px" height="40px" loading="lazy"/></a>
+                <a href="https://www.linkedin.com/in/keira-kistensamy-4722732a8/" target="_blank"><img src="https://keirakistensamy.github.io/images/images/linkedIn.png" alt="LinkedIn" class="project-imgs img-fluid m-auto" width="40px" height="40px" loading="lazy"/></a>
+            </div>
         </div>
     </div>
-</div> -->
+</div>
 
-<div class="col-3" id="contact-me">
-                <div class="hTCM">
-                  <div class="phone-number">
-                    <img :src="imgUrlPhoneNumber" alt=""/>
-                  </div>
-
-                  <div class="email">
-                    <img :src="imgUrlEmail" alt=""/>
-                  </div>
-
-                  <div class="location">
-                    <img :src="imgUrlLocation" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="contact-dets">
-                  <p>+27 81 314 0839</p>
-
-                  <p>candicekeet3@gmail.com</p>
-
-                  <p>Cape Town, South Africa</p>
-                </div>
-              </div> 
 
 </div>
 
